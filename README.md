@@ -2,6 +2,8 @@
 
 A practical example for organizing code for Redux with Typescript taking advantage of type checking.
 
+[![Build Status](https://travis-ci.org/aleris/redux-and-typescript-enhanced-example.svg?branch=master)](https://travis-ci.org/aleris/redux-and-typescript-enhanced-example)
+
 This is an alternative to the example from https://redux.js.org/recipes/usage-with-typescript ( 
 with complete code in https://codesandbox.io/s/w02m7jm3q7) which has the following issues:
 

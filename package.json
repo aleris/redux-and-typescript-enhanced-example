@@ -2,6 +2,8 @@
   "name": "my-app",
   "version": "0.1.0",
   "homepage": "http://aleris.github.io/redux-and-typescript-enhanced-example",
+  "license": "MIT",
+  "author": "aleris",
   "main": "src/index.tsx",
   "dependencies": {
     "react": "16.10.2",
@@ -21,7 +23,7 @@
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}",
-    "predeploy": "yarn build",
+    "predeploy": "less-watch-compiler src src --run-once  & yarn build",
     "deploy": "gh-pages -d build"
   },
   "browserslist": {
