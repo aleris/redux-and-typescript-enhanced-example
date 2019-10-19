@@ -4,8 +4,8 @@ import { AppState } from '../store'
 
 import styles from './App.module.css'
 
-import ChatHistory from '../features/ChatHistory/ChatHistory'
-import ChatInterface from '../features/ChatInterface/ChatInterface'
+import ChatHistory from '../components/ChatHistory/ChatHistory'
+import ChatInterface from '../components/ChatInterface/ChatInterface'
 
 import {
   ChatState,
