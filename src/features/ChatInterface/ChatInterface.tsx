@@ -34,7 +34,7 @@ const ChatInterface: React.FunctionComponent<ChatInterfaceProps> = ({
         value={message}
         onChange={updateMessage}
         onKeyPress={sendMessageOnKeyPress}
-        placeholder="Type a message..."
+        placeholder={`${userName}, type a message...`}
       />
       <button onClick={callSendMessage}>Send</button>
     </div>

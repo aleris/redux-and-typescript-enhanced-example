@@ -39,7 +39,7 @@ class App extends React.Component<AppProps> {
     this.props.updateSystemState({
       loggedIn: true,
       session: 'my_session',
-      userName: 'My Name'
+      userName: 'Foxy Troxy'
     })
     this.props.sendMessage({
       user: 'Chat Bot',
@@ -70,7 +70,9 @@ class App extends React.Component<AppProps> {
     return (
       <div className={styles.app}>
         <header>
-          <div><img src={logo} width={100} alt="React Logo"/> </div>
+          <div>
+            <img src={logo} width={100} alt="React Logo" />{' '}
+          </div>
           <div className={styles.title}>Chatux Reactux Typescriptux</div>
         </header>
         <section>
