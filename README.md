@@ -11,7 +11,7 @@ with complete code in https://codesandbox.io/s/w02m7jm3q7). That example has a c
 on same concept (an action) in three separate files.
 * With many actions in a store tree, the reducer become a long switch list of unrelated mutations,
 very hard to follow.
-* Reduplication of strings like for the type constant `const SEND_MESSAGE = 'SEND_MESSAGE'.
+* Reduplication of strings like for the type constant `const SEND_MESSAGE = 'SEND_MESSAGE'`.
 * Action creators, action type and type constant are only linked by name not by a compiled
 common structure, in big projects there can be many name clashes, small name variations, etc. 
 
