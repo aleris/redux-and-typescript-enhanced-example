@@ -4,8 +4,8 @@ A practical example for organizing code for Redux with Typescript taking advanta
 
 [![Build Status](https://travis-ci.org/aleris/redux-and-typescript-enhanced-example.svg?branch=master)](https://travis-ci.org/aleris/redux-and-typescript-enhanced-example)
 
-This is an alternative to the example from https://redux.js.org/recipes/usage-with-typescript ( 
-with complete code in https://codesandbox.io/s/w02m7jm3q7) which has the following issues:
+This is an alternative code organization of the example from https://redux.js.org/recipes/usage-with-typescript ( 
+with complete code in https://codesandbox.io/s/w02m7jm3q7). That example has a couple of disadvantages:
 
 * Non-functional Redux store organization on types, actions, reducers which in turn forces working 
 on same concept (an action) in three separate files.
@@ -61,7 +61,7 @@ The second interface, implemented as an abstract class, provide the actual objec
   abstract readonly type: string
   abstract readonly newMessage: Message
 ```
-This way the runtime object is a plain object as required by Redux.
+The runtime object will still be a plain object as required by Redux.
 
 From components/features the action is used like:
 ```typescript
@@ -75,7 +75,9 @@ The project also has a working configured setup for eslint, prettier and less.
 This project was initially bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Less is not supported by create react app without ejecting, so this is using less-watch-compiler 
-to watch for changes and regenerate the css files inplace. CSS modules are used for styles in tsx files.  
+to watch for changes and regenerate the css files inplace. CSS modules are used for styles in tsx files.
+
+The project has a minimal ci configuration for Travis CI and automatically deploys to git hub pages. 
 
 ## Available Scripts
 
@@ -87,6 +89,7 @@ Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
+CSS files will be updated if you make changes to the less files.<br />
 You will also see any lint errors in the console.
 
 ### `yarn test`
@@ -103,6 +106,10 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn deploy`
+
+Deploys to github pages with the authenticated user.
 
 ### `yarn eject`
 
