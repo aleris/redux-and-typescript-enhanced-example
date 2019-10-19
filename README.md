@@ -24,50 +24,62 @@ The class has two _'interfaces'_, the class or static interface which provides:
 
 The action type constant:
 ```typescript
-    static readonly _TYPE = 'SendMessageAction'
+static readonly _TYPE = 'SendMessageAction'
 ```
 By convention, the type constant has the exact name as the class.
 
 Action creator:
 ```typescript
-  static createAction(newMessage: Message): SendMessageAction {
-    return {
-      type: SendMessageAction._TYPE,
-      newMessage
-    }
+static createAction(newMessage: Message): SendMessageAction {
+  return {
+    type: SendMessageAction._TYPE,
+    newMessage
   }
+}
 ```
 
 Reducer function:
 ```typescript
-  static createAction(newMessage: Message): SendMessageAction {
-    return {
-      type: SendMessageAction._TYPE,
-      newMessage
-    }
+static _reduce(state: ChatState, action: SendMessageAction): ChatState {
+  return {
+    messages: [...state.messages, action.newMessage]
   }
+}
 ```
+
 This reducer function is called from the reducer switch which will just dispatch the calls:
 
 ```typescript
 switch (action.type) {
-    case SendMessageAction._TYPE:
-      return SendMessageAction._reduce(state, action as SendMessageAction)
-    //...
+  case SendMessageAction._TYPE:
+    return SendMessageAction._reduce(state, action as SendMessageAction)
+  //...
 ```
 
 The second interface, implemented as an abstract class, provide the actual object type:
 ```typescript
-  abstract readonly type: string
-  abstract readonly newMessage: Message
+abstract readonly type: string
+abstract readonly newMessage: Message
 ```
 The runtime object will still be a plain object as required by Redux.
 
-From components/features the action is used like:
+From connected components the action is used like:
 ```typescript
 const mapDispatchToProps = {
   sendMessage: SendMessageAction.createAction,
 // ...
+```
+
+Or directly with:
+```typescript
+dispatch(
+  SendMessageAction.createAction({
+    user,
+    message,
+    timestamp,
+    isMe
+  })
+)
 ```
 
 The project also has a working configured setup for eslint, prettier and less.

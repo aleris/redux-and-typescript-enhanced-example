@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { DeleteMessageAction, Message } from '../../store/chat'
-import ChatMessage from '../../components/ChatMessage/ChatMessage'
+import ChatMessage from '../ChatMessage/ChatMessage'
 
 import styles from './ChatHistory.module.css'
 
