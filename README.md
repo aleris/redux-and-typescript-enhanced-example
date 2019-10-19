@@ -82,6 +82,11 @@ dispatch(
 )
 ```
 
+Disadvantages of this approach are:
+* Still bloated
+* Action class types are repeated a lot in definition
+* One reducer per action (which arguably can be a good thing)
+
 The project also has a working configured setup for eslint, prettier and less.
  
 This project was initially bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
