@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/redux-and-typescript-enhanced-example/static/css/main.0f73c45a.chunk.css",
+    "main.js": "/redux-and-typescript-enhanced-example/static/js/main.ba46a4ea.chunk.js",
+    "main.js.map": "/redux-and-typescript-enhanced-example/static/js/main.ba46a4ea.chunk.js.map",
+    "runtime-main.js": "/redux-and-typescript-enhanced-example/static/js/runtime-main.2115324f.js",
+    "runtime-main.js.map": "/redux-and-typescript-enhanced-example/static/js/runtime-main.2115324f.js.map",
+    "static/js/2.a34f1165.chunk.js": "/redux-and-typescript-enhanced-example/static/js/2.a34f1165.chunk.js",
+    "static/js/2.a34f1165.chunk.js.map": "/redux-and-typescript-enhanced-example/static/js/2.a34f1165.chunk.js.map",
+    "index.html": "/redux-and-typescript-enhanced-example/index.html",
+    "precache-manifest.fd560f83c86d8a8887fbb5b1b2d40497.js": "/redux-and-typescript-enhanced-example/precache-manifest.fd560f83c86d8a8887fbb5b1b2d40497.js",
+    "service-worker.js": "/redux-and-typescript-enhanced-example/service-worker.js",
+    "static/css/main.0f73c45a.chunk.css.map": "/redux-and-typescript-enhanced-example/static/css/main.0f73c45a.chunk.css.map",
+    "static/media/bot.png": "/redux-and-typescript-enhanced-example/static/media/bot.caa4eec2.png",
+    "static/media/fox.png": "/redux-and-typescript-enhanced-example/static/media/fox.515ea565.png",
+    "static/media/logo.svg": "/redux-and-typescript-enhanced-example/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2115324f.js",
+    "static/js/2.a34f1165.chunk.js",
+    "static/css/main.0f73c45a.chunk.css",
+    "static/js/main.ba46a4ea.chunk.js"
+  ]
+}
